@@ -3,6 +3,10 @@
 My go-to full-stack end-to-end type-safe React project template.
 
 ```bash
+$ bun create lithdew/dew [project-name]
+```
+
+```bash
 # Install dependencies
 bun install
 
@@ -10,7 +14,7 @@ bun install
 bun dev
 
 # Build production bundle
-bun build
+bun run build
 
 # Run production bundle
 bun start
@@ -74,4 +78,3 @@ Disabling SSR also gives peace of mind to frontend developers in your team. They
 The TanStack Router loader data is hydrated/dehydrated with `devalue`. `devalue` was chosen for its benchmarks and for its support for a large variety of data types and references.
 
 `devalue` is intentionally, for security purposes, not used to hydrate/dehydrate user input. User input is instead hydrated/dehydrated with `JSON.parse` and `JSON.stringify`.
-
